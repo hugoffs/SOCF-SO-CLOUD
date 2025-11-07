@@ -17,7 +17,7 @@ def info():
 @app.route("/metricas")
 def metricas():
     dados = {
-        "integrantes": "Angelo Andrioli Netho, Hugo Fagundes Fari Santos",
+        "integrantes": "Angelo Andrioli Netho, Hugo Fagundes Faria Santos",
         "pid": os.getpid(),
         "cpus": psutil.cpu_percent(percpu=True),
         "memoria_usada_mb": round(psutil.virtual_memory().used / 1024 ** 2, 2),
