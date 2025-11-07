@@ -16,7 +16,14 @@ def info():
 
 @app.route("/metricas")
 def metricas():
-    return render_template("metricas.html", )
+    dados = {
+        "integrantes": "Angelo Andrioli Netho, Hugo Fagundes Fari Santos",
+        "pid": os.getpid(),
+        "cpus": psutil.cpu_percent(percpu=True),
+        "memoria_usada_mb": round(psutil.virtual_memory().used / 1024 ** 2, 2),
+        "sistema_operacional": platform.platform()
+    }
+    return dados
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
