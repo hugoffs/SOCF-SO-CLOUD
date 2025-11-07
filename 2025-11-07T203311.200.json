@@ -1,0 +1,16 @@
+{
+  "cpus": [
+    48.5,
+    45.0,
+    45.3,
+    46.1,
+    47.1,
+    48.4,
+    46.9,
+    48.8
+  ],
+  "integrantes": "Angelo Andrioli Netho, Hugo Fagundes Faria Santos",
+  "memoria_usada_mb": 14339.0,
+  "pid": 57,
+  "sistema_operacional": "Linux-6.8.0-1042-aws-x86_64-with-glibc2.36"
+}
