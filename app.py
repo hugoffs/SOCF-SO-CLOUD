@@ -16,7 +16,12 @@ def info():
 
 @app.route("/metricas")
 def metricas():
-    return render_template("metricas.html")
+    return render_template("metricas.html", )
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
+    print("Nome Dos integrande: Angelo Andrioli Netho, Hugo Fagundes Fari Santos")
+    print(f"PID: {os.getpid()}")
+    print(f"CPUS: {psutil.cpu_percent(percpu=True)}") 
+    print(f"Memoria Usada: {psutil.virtual_memory().used /1024 ** 2}" ) 
+    print(f"Sistema Operaciona: {platform.platform()}")
