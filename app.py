@@ -27,7 +27,7 @@ def metricas():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
-    print("Nome dos integrates: Angelo Andrioli Netho, Hugo Fagundes Faria Santos")
+    print("Nome dos integrantes: Angelo Andrioli Netho, Hugo Fagundes Faria Santos")
     print(f"PID: {os.getpid()}")
     print(f"CPUS: {psutil.cpu_percent(percpu=True)}") 
     print(f"Memória Usada: {psutil.virtual_memory().used /1024 ** 2}" )
